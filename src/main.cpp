@@ -2009,7 +2009,7 @@ bool LoadBlockIndex(bool fAllowNew)
 	// Genesis block:
 	// block.nTime = 1366559428 
 	// block.nNonce = 2085386442 
-	 block.GetHash = 498e3c9da247b3c396526c94b8b6c63f4da7d988c8c2602bf3d313aa68137d63;
+	// block.GetHash = 498e3c9da247b3c396526c94b8b6c63f4da7d988c8c2602bf3d313aa68137d63;
 	// CBlock(hash=384b060671f4a93948e9, PoW=00000951e146b0026411, ver=1,
 	//  hashPrevBlock=00000000000000000000, hashMerkleRoot=5a2e19825b,
 	//  nTime=1366559428, nBits=1e0ffff0, nNonce=2085386442, vtx=1)
