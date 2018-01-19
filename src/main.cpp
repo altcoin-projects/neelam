@@ -2019,7 +2019,7 @@ bool LoadBlockIndex(bool fAllowNew)
 	// vMerkleTree: 5a2e19825b
         
         // Genesis block
-        const char* pszTimestamp = "ToDo: 17th Jan 2018";
+        const char* pszTimestamp = "Padmaavat bakwas don't watch it Asaduddin Owaisi tells Muslims";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2031,21 +2031,21 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1516217177;
+        block.nTime    = 1516336289;
         block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 386516579;
+        block.nNonce   = 0;
 
         if (fTestNet)
         {
-            block.nTime    = 1516217177;
-            block.nNonce   = 386516579;
+            block.nTime    = 1516336289;
+            block.nNonce   = 0;
         }
 
         //// debug print
         printf("%s\n", block.GetHash().ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x6a889b75bba533e459996479576b73cfbb988681fe206c2c3a91291fa6d2e725"));
+        assert(block.hashMerkleRoot == uint256("0x6a889b75bba533e459996479576b73cfbb988681fe206c2c3a91291fa6d2e720"));
 
         // If genesis block hash does not match, then generate new genesis hash.
         if (false && block.GetHash() != hashGenesisBlock)
